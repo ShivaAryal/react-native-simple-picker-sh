@@ -9,7 +9,8 @@
 
 E.g.:
 
-``` import {Picker} from 'react-native-simple-picker'
+``` 
+import {Picker} from 'react-native-simple-picker'
 export default class TestPicker extends Component{
 	state={
 		pickedItem:''
@@ -18,7 +19,7 @@ export default class TestPicker extends Component{
 		return(
 			<View>
 				<Picker
-					items=['foo','bar']
+					items={['foo','bar']}
 					selectedValue={this.state.pickedItem}
 					placeHolder="Select an item"
 					onChange={(item)=>this.setState({pickedItem:item})}
