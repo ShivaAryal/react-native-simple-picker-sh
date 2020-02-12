@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { View,
     Modal,
     TouchableOpacity,
-    Text
+    Text,
+    ScrollView
 } from 'react-native';
 import PropTypes from 'prop-types'
 
@@ -87,6 +88,9 @@ export default class Picker extends Component {
                         paddingLeft:this.props.offSetX || this.state.offSetX,
                         paddingTop:this.props.offSetY || this.state.offSetY
                     }}>
+                        <ScrollView 
+                            style={{height:300}}
+                            showsVerticalScrollIndicator={false}>
                     {this.props.items.map((item,i)=>(
                         <TouchableOpacity
                             key={i}
@@ -102,7 +106,7 @@ export default class Picker extends Component {
                                 paddingHorizontal:10
                             }}
                             onPress={()=>this.onItemSelect(item)}
-                            activeOpacity={0.8}
+                            activeOpacity={0.9}
                         >
                             <Text
                                 style={{
@@ -114,6 +118,7 @@ export default class Picker extends Component {
                             </Text>
                         </TouchableOpacity>
                     ))}
+                    </ScrollView>
                 </TouchableOpacity>
 
             </Modal>

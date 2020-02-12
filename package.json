@@ -1,11 +1,12 @@
 {
   "name": "react-native-simple-picker-sh",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "description": "A simple react native picker library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "https://github.com/shivaaryal/react-native-simple-picker-sh",
   "keywords": [
     "react-native"
   ],
